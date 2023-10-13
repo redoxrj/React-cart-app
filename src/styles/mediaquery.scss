@@ -1,0 +1,55 @@
+@import './colors.scss';
+
+@media screen and (max-width: 869px) {
+    .cart{
+        
+        grid-template-columns: 1fr ;
+       
+    
+        >main{
+            
+            padding: 1rem;
+           
+    
+            >h1{
+                font: 400 2rem 'roboto', arial, helvetica;
+            }
+    
+    
+        }
+    
+    
+        >aside{
+           padding: 2rem;
+           border-radius: 0%;
+           > h2 {
+               font: 100 1rem "Roboto";
+             }
+        }
+    }
+
+    .cartItem{
+        padding: 0 0.1rem;
+        width: 100%;
+        >div>button{
+            height: 20px;
+            width: 20px;
+            
+        }
+        >svg{
+        font-size: 1.3rem;
+
+        }
+        >img{
+            width: 150%;
+        }
+        >article{
+            text-align: start;
+            width: 100%;
+            >p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    
+}

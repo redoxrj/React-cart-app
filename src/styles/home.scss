@@ -1,0 +1,54 @@
+@import './colors.scss';
+
+.home{
+    color: $tertiary;
+    height: 89vh;
+    width: 100% ;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productCard{
+    background-color: $tertiary;
+    width: 200px;
+    margin:  1rem;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 48%;
+    color: $primarydark;
+    // gap: 1rem;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px black; // hehe even thogh pta ni lgra
+    text-transform: uppercase;
+    &:hover{
+        transform: scale(1.1);
+    }
+    >img{
+        height: 50%;
+        width : 100%;
+        object-fit: contain;
+    }
+    >button{
+        background-color: $secondary;
+        color: $tertiary;
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+        width: 100%;
+        cursor: pointer;
+        text-transform: uppercase;
+        font: 500 0.8rem 'Roboto';
+        transition: all 0.5s;
+        &:hover{
+            // opacity: 0.7;
+            background-color: $secondarydark;
+        }
+
+    }
+}
